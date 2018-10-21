@@ -1,4 +1,4 @@
-package com.infybank;
+package com.infy.studentdetails;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -15,7 +15,7 @@ public class HibernateUtil {
      static  {
         try {
         	StandardServiceRegistry standardRegistry = 
-        		       new StandardServiceRegistryBuilder().configure("com/infybank/hibernate.cfg.xml").build();
+        		       new StandardServiceRegistryBuilder().configure("com/infy/studentdetails/hibernate.cfg.xml").build();
         			Metadata metaData = 
         		        new MetadataSources(standardRegistry).getMetadataBuilder().build();
         			sessionFactory = metaData.getSessionFactoryBuilder().build();
